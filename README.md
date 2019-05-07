@@ -1,5 +1,7 @@
-# remote_release
+# remote_release 
 远程部署工具(本地应用快速部署至远程服务器)
+<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)  
 
 ### remote_tomcat.sh
 远程部署war包或者静态html文件到tomcat,并重启服务。
