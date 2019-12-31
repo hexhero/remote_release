@@ -22,12 +22,12 @@ host="192.168.1.165"
 user="root"
 # 远程服务器Tomcat目录
 REMOTE_TOMCAT_DIR="/data/ysoffice/t3" # 8100
-# 远程服务器jdk环境变量
-REMOTE_JAVA_HOME="/usr/local/java1.7/jdk1.7.0_80"
+# 远程服务器java目录(一般情况不用改)
+REMOTE_JAVA_HOME="/usr"
 
-# 本地应用路径
+# 需要传输的文件路径
 app_file="C:/Users/DELL/Documents/APL_PROJECT/YS-OFFICE/ys-web/target/ys-web.war"
-# 本地应用目录
+# 需要传输的目录路径
 app_dir="C:/Users/DELL/Documents/APL_PROJECT/ys-info/src/main/dist"
 
 ###################################################
