@@ -48,19 +48,23 @@ ______ _   _ _____  _   __  _____ ________  ________   ___ _____
 
      \033[33m ======= Remote tomcat deploy shell! @yangb ======= \033[0m    "
 echo
-echo -e "Host: \033[32m${host}\033[0m | User: \033[32m${user}\033[0m | Remote tomcat path: \033[32m${REMOTE_TOMCAT_DIR}\033[0m"
+echo -e "主机: \033[32m${host}\033[0m | 用户: \033[32m${user}\033[0m "
+echo -e "文件路径: \033[32m${app_file}\033[0m"
+echo -e "目录路径: \033[32m${app_dir}\033[0m"
+echo -e "远程Jdk或Jre目录: \033[32m${REMOTE_JAVA_HOME}\033[0m"
+echo -e "远程Tomcat目录: \033[32m${REMOTE_TOMCAT_DIR}\033[0m"
 echo
 echo -e "\033[36mOptions:\033[0m"
 echo
-echo "[1] Backup webapps to /home directory in the remote server" # 备份远程 webapps目录到 /home 目录下
-echo "[2] Shutdown the remote tomcat" # 关闭远程tomcat
-echo "[3] Clear the webapps directory on remote tomcat" # 清空远程webapps目录
-echo "[4] Send a app file to webapps/ on the remote tomcat" # 发送一个应用文件文件到远程 webapps 目录中
-echo "[5] Send files for the folder on the remote webapps/ROOT" # 发送一个文件目录下的内容到远程 webapps/ROOT 目录中
-echo "[6] Start the remote tomcat" # 启动远程Tomcat
-echo "[7] Avoid repeat certification" # 免除重复认证
+echo "[1] 备份远程 webapps目录到 /home 目录下" # Backup webapps to /home directory in the remote server
+echo "[2] 关闭远程tomcat" # Shutdown the remote tomcat
+echo "[3] 清空远程webapps目录" # Clear the webapps directory on remote tomcat
+echo "[4] 发送一个应用文件文件到远程 webapps 目录中" #  Send a app file to webapps/ on the remote tomcat
+echo "[5] 发送一个文件目录下的内容到远程 webapps/ROOT 目录中" # Send files for the folder on the remote webapps/ROOT
+echo "[6] 启动远程Tomcat" # Start the remote tomcat
+echo "[7] 免除重复认证" # Avoid repeat certification
 echo
-echo  -e "\033[31m[0] EXIT \033[0m" # 退出
+echo  -e "\033[31m[0] 退出 \033[0m" # EXIT
 echo
 read -p "Please input your command:  " command
 
